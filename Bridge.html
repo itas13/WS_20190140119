@@ -1,0 +1,36 @@
+<DOCTYPE html>
+    <html>
+    <head>
+      <title>WS Consume</title>
+      <script src="jquery.js"></script>
+      
+    </head>
+    <body>
+      <h1>Web Service Consuming</h1>
+      <hr>
+      <button onclick="wsconsume()">Show data from url</button>
+      <div id="view"></div>
+      <script src="./jquery.js"></script>
+      <script>
+        var data = document.getElementById("view");
+        function wsconsume(){
+        //   let url = "http://localhost:8090/json/datamahasiswa";
+        //   fetch(url)
+        //     .then((response)=>{
+        //     return response.json();
+        //     })
+        //     .then((result)=>{
+        //     console.log(result);
+            
+        //     data.innerHTML= result.nama + '-' + result.noktp;
+
+        $.getJSON("http://localhost:8090/json/datamahasiswa", function(res){
+            console.log(res)
+            $.each(res, function(a){
+                document.getElementById("view").innerHTML += "NIM :" + res[a].nim + " NAMA : " + res[a].nama + " ALAMAT :" + res[a].alamat + " PRODI :" + res[a].prodi + " FAKULTAS :" + res[a].fakultas + "<br>"
+            })
+        })
+        }
+      </script>
+    </body>
+    </html>
