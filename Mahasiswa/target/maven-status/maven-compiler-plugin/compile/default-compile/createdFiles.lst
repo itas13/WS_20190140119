@@ -1,0 +1,8 @@
+pws\praktikum119\Mahasiswa\MahasiswaApplication.class
+pws\praktikum119\Mahasiswa\ViewController.class
+pws\praktikum119\Mahasiswa\DatamahasiswaJpaController.class
+pws\praktikum119\Mahasiswa\exceptions\PreexistingEntityException.class
+pws\praktikum119\Mahasiswa\exceptions\NonexistentEntityException.class
+pws\praktikum119\Mahasiswa\Datamahasiswa.class
+pws\praktikum119\Mahasiswa\exceptions\IllegalOrphanException.class
+pws\praktikum119\Mahasiswa\Datamahasiswa_.class
